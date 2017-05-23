@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using FitOutApplication.Droid;
 using Xamarin.Forms;
+
 using System.IO;
 
 [assembly: Dependency(typeof(FileHelper))]
