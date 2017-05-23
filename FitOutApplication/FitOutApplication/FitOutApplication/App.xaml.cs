@@ -23,12 +23,17 @@ namespace FitOutApplication
                 {
                     new NavigationPage(new ItemsPage())
                     {
-                        Title = "Browse",
+                        Title = "Calendar",
                         Icon = Device.OnPlatform("tab_feed.png",null,null)
                     },
                     new NavigationPage(new AboutPage())
                     {
-                        Title = "About",
+                        Title = "Excercises",
+                        Icon = Device.OnPlatform("tab_about.png",null,null)
+                    },
+                    new NavigationPage(new ProgressPage())
+                    {
+                        Title = "Progress",
                         Icon = Device.OnPlatform("tab_about.png",null,null)
                     },
                 }
