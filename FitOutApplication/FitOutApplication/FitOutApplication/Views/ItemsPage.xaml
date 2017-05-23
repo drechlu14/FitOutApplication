@@ -30,6 +30,7 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Text="1"
+                Clicked="Button1_Click"
                 BorderColor="Blue"
                 BorderRadius = "150"
                 BorderWidth = "5"
