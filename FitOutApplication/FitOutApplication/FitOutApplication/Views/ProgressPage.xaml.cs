@@ -17,6 +17,7 @@ namespace FitOutApplication.Views
         public ProgressPage()
         {
             InitializeComponent();
+            //Navigation.PushModalAsync(new SetupPage());
         }
 
     }
