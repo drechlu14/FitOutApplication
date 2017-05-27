@@ -7,15 +7,15 @@ using Xamarin.Forms;
 
 namespace FitOutApplication.Views
 {
-    public partial class WeightsPage : ContentPage
+    public partial class SetupPage : ContentPage
     {
-        ItemsViewModel viewModel;
+        WeightsViewModel viewModel;
 
-        public WeightsPage()
+        public SetupPage()
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new ItemsViewModel();
+            BindingContext = viewModel = new WeightsViewModel();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -24,10 +24,10 @@ namespace FitOutApplication.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            await Navigation.PushModalAsync(new WeightsDetailPage(new SetupViewModel(item)));
 
             // Manually deselect item
-            ItemsListView.SelectedItem = null;
+            ItemsListView2.SelectedItem = null;
         }
 
         protected override void OnAppearing()

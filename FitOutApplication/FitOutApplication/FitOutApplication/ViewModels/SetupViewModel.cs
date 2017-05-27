@@ -1,21 +1,21 @@
-﻿using System;
-using System.Windows.Input;
-using Xamarin.Forms;
+﻿using FitOutApplication.Models;
 
 namespace FitOutApplication.ViewModels
 {
     public class SetupViewModel : BaseViewModel
     {
-        public SetupViewModel()
+        public Item Item { get; set; }
+        public SetupViewModel(Item item = null)
         {
-            Title = "Body part: Chest";
-
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            Title = item.Text;
+            Item = item;
         }
 
-        /// <summary>
-        /// Command to open browser to xamarin.com
-        /// </summary>
-        public ICommand OpenWebCommand { get; }
+        int quantity = 1;
+        public int Quantity
+        {
+            get { return quantity; }
+            set { SetProperty(ref quantity, value); }
+        }
     }
 }
