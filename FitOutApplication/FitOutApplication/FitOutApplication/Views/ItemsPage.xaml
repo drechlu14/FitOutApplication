@@ -4,6 +4,9 @@
              x:Class="FitOutApplication.Views.ItemsPage"
               Title="FitOut"
              x:Name="CalendarItemsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="ButtonInfo" Clicked="ButtonInfo_Click" Text="About" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -27,10 +30,11 @@
 
             <Button 
                 x:Name="Button1"
+                ClassId="1"
                 Grid.Row="1"
                 Grid.Column="0"
                 Text="1"
-                Clicked="Button1_Click"
+                Clicked="Button_Click"
                 BorderColor="Blue"
                 BorderRadius = "150"
                 BorderWidth = "5"
@@ -38,38 +42,36 @@
                 HeightRequest="50"
                 Margin="15,0,0,0"
             />
-            <Button x:Name="Button2"    Clicked="Button1_Click" Grid.Row="1" Grid.Column="1" Text="2" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button3" Grid.Row="1" Grid.Column="2" Text="3" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button4" Grid.Row="1" Grid.Column="3" Text="4" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button5" Grid.Row="1" Grid.Column="4" Text="5" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button6" Grid.Row="1" Grid.Column="5" Text="6" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button7" Grid.Row="2" Grid.Column="0" Text="7" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
-            <Button x:Name="Button8" Grid.Row="2" Grid.Column="1" Text="8" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button9" Grid.Row="2" Grid.Column="2" Text="9" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button10" Grid.Row="2" Grid.Column="3" Text="10" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button11" Grid.Row="2" Grid.Column="4" Text="11" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button12" Grid.Row="2" Grid.Column="5" Text="12" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button13" Grid.Row="3" Grid.Column="0" Text="13" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
-            <Button x:Name="Button14" Grid.Row="3" Grid.Column="1" Text="14" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button15" Grid.Row="3" Grid.Column="2" Text="15" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button16" Grid.Row="3" Grid.Column="3" Text="16" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button17" Grid.Row="3" Grid.Column="4" Text="17" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button18" Grid.Row="3" Grid.Column="5" Text="18" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button19" Grid.Row="4" Grid.Column="0" Text="19" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
-            <Button x:Name="Button20" Grid.Row="4" Grid.Column="1" Text="20" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button21" Grid.Row="4" Grid.Column="2" Text="21" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button22" Grid.Row="4" Grid.Column="3" Text="22" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button23" Grid.Row="4" Grid.Column="4" Text="23" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button24" Grid.Row="4" Grid.Column="5" Text="24" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button25" Grid.Row="5" Grid.Column="0" Text="25" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
-            <Button x:Name="Button26" Grid.Row="5" Grid.Column="1" Text="26" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button27" Grid.Row="5" Grid.Column="2" Text="27" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button28" Grid.Row="5" Grid.Column="3" Text="28" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button29" Grid.Row="5" Grid.Column="4" Text="29" WidthRequest="50" HeightRequest="50" />
-            <Button x:Name="Button30" Grid.Row="5" Grid.Column="5" Text="30" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button2" ClassId="2" Clicked="Button_Click" Grid.Row="1" Grid.Column="1" Text="2" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button3" ClassId="3" Clicked="Button_Click" Grid.Row="1" Grid.Column="2" Text="3" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button4" ClassId="4" Clicked="Button_Click" Grid.Row="1" Grid.Column="3" Text="4" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button5" ClassId="5" Clicked="Button_Click" Grid.Row="1" Grid.Column="4" Text="5" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button6" ClassId="6" Clicked="Button_Click" Grid.Row="1" Grid.Column="5" Text="6" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button7" ClassId="7" Clicked="Button_Click" Grid.Row="2" Grid.Column="0" Text="7" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
+            <Button x:Name="Button8" ClassId="8" Clicked="Button_Click" Grid.Row="2" Grid.Column="1" Text="8" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button9" ClassId="9" Clicked="Button_Click" Grid.Row="2" Grid.Column="2" Text="9" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button10" ClassId="10" Clicked="Button_Click" Grid.Row="2" Grid.Column="3" Text="10" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button11" ClassId="11" Clicked="Button_Click" Grid.Row="2" Grid.Column="4" Text="11" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button12" ClassId="12" Clicked="Button_Click" Grid.Row="2" Grid.Column="5" Text="12" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button13" ClassId="13" Clicked="Button_Click" Grid.Row="3" Grid.Column="0" Text="13" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
+            <Button x:Name="Button14" ClassId="14" Clicked="Button_Click" Grid.Row="3" Grid.Column="1" Text="14" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button15" ClassId="15" Clicked="Button_Click" Grid.Row="3" Grid.Column="2" Text="15" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button16" ClassId="16" Clicked="Button_Click" Grid.Row="3" Grid.Column="3" Text="16" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button17" ClassId="17" Clicked="Button_Click" Grid.Row="3" Grid.Column="4" Text="17" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button18" ClassId="18" Clicked="Button_Click" Grid.Row="3" Grid.Column="5" Text="18" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button19" ClassId="19" Clicked="Button_Click" Grid.Row="4" Grid.Column="0" Text="19" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
+            <Button x:Name="Button20" ClassId="20" Clicked="Button_Click" Grid.Row="4" Grid.Column="1" Text="20" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button21" ClassId="21" Clicked="Button_Click" Grid.Row="4" Grid.Column="2" Text="21" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button22" ClassId="22" Clicked="Button_Click" Grid.Row="4" Grid.Column="3" Text="22" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button23" ClassId="23" Clicked="Button_Click" Grid.Row="4" Grid.Column="4" Text="23" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button24" ClassId="24" Clicked="Button_Click" Grid.Row="4" Grid.Column="5" Text="24" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button25" ClassId="25" Clicked="Button_Click" Grid.Row="5" Grid.Column="0" Text="25" WidthRequest="50" HeightRequest="50" Margin="15,0,0,0" />
+            <Button x:Name="Button26" ClassId="26" Clicked="Button_Click" Grid.Row="5" Grid.Column="1" Text="26" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button27" ClassId="27" Clicked="Button_Click" Grid.Row="5" Grid.Column="2" Text="27" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button28" ClassId="28" Clicked="Button_Click" Grid.Row="5" Grid.Column="3" Text="28" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button29" ClassId="29" Clicked="Button_Click" Grid.Row="5" Grid.Column="4" Text="29" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button30" ClassId="30" Clicked="Button_Click" Grid.Row="5" Grid.Column="5" Text="30" WidthRequest="50" HeightRequest="50" />
 
         </Grid>
-
-
     </ContentPage.Content>
 </ContentPage>

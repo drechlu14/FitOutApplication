@@ -25,7 +25,7 @@
                     <Entry x:Name="EntryFat" IsVisible="False" Placeholder="Add current body fat" PlaceholderColor="Navy"/>
 
                     <Button Clicked="AddFat_Clicked" x:Name="AddFat" Text="Add data"></Button>
-                    </StackLayout>
+                </StackLayout>
                 <StackLayout BackgroundColor="#d7e3f7">
                     <Label Text="Belly circumference" Grid.Column="0" FontSize="Medium"  />
                     <Label x:Name="AtBeginCM" Margin="0,15,0,0" Text="Belly at start: "  ></Label>

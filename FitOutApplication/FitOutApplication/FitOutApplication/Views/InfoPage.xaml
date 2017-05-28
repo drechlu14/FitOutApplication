@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitOutApplication.Views.InfoPage"
+              Title="FitOut"
+             x:Name="InfoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="About FitOut" FontSize="Large" Margin="0,10,0,0"  />
+                <Label Text="Our application is a 30-day challenge to keep you motivated while you're doing excercises. You can check your completed day and carefully watch your weight and body fat." FontSize="Medium"  />
+                <Label Text="In excercise page you can add your own excercises and see those that we prepared in default." FontSize="Medium"  />
+                <Label Text="Creators: Lukáš Drechsel, Marek Bastl" FontSize="Medium" Margin="0,10,0,0"  />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

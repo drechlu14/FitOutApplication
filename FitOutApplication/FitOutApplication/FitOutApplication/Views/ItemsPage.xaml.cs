@@ -15,13 +15,21 @@ namespace FitOutApplication.Views
         {
             InitializeComponent();
 
-
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
+            //Button ctrl = ((Button)sender);
+            //switch (ctrl.BackgroundColor.Name)
+            var button = (Button)sender;
+            var classId = button.ClassId;
+            button.BackgroundColor = Color.Yellow;
+                    //Button3.BackgroundColor = Color.Yellow;
+        }
 
-
+        private void ButtonInfo_Click(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new InfoPage());
         }
     }
-    }
+}
