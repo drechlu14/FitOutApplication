@@ -7,7 +7,6 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Progress" Grid.Column="0" FontSize="Large"  />
                 <StackLayout BackgroundColor="#d7e3f7">
                     <Label Text="Weight" Grid.Column="0" FontSize="Medium"  />
                     <Label x:Name="AtBeginWeight" Margin="0,15,0,0" Text="Weight at start: "  ></Label>

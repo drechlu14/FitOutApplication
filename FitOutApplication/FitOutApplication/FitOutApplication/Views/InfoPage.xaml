@@ -8,8 +8,8 @@
         <ScrollView>
             <StackLayout>
                 <Label Text="About FitOut" FontSize="Large" Margin="0,10,0,0"  />
-                <Label Text="Our application is a 30-day challenge to keep you motivated while you're doing excercises. You can check your completed day and carefully watch your weight and body fat." FontSize="Medium"  />
-                <Label Text="In excercise page you can add your own excercises and see those that we prepared in default." FontSize="Medium"  />
+                <Label Text="Our application is a 30-day challenge to keep you motivated while you're doing exercises. You can check your completed day and carefully watch your weight and body fat." FontSize="Medium"  />
+                <Label Text="In exercise page you can add your own exercises and see those that we prepared in default." FontSize="Medium"  />
                 <Label Text="Creators: Lukáš Drechsel, Marek Bastl" FontSize="Medium" Margin="0,10,0,0"  />
             </StackLayout>
         </ScrollView>

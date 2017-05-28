@@ -78,12 +78,12 @@ namespace FitOutApplication.Services
             items = new List<Item>();
             var _items = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Buy some cat food", Description="The cats are hungry"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Learn F#", Description="Seems like a functional idea"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Learn to play guitar", Description="Noted"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Buy some new candles", Description="Pine and cranberry for that winter feel"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Complete holiday shopping", Description="Keep it a secret!"},
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Finish a todo list", Description="Done"},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Bench-press", Description="This is bench-press and how you should do it."},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Push-ups", Description="These are push-ups and how you should do them."},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Squats", Description="These are squats and how you should do them."},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Sit-ups", Description="These are sit-ups and how you should do them."},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Crunches", Description="These are crunches and how you should do them."},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Arm circles", Description="These are arm circles and how you should do them."},
             };
 
             foreach (Item item in _items)

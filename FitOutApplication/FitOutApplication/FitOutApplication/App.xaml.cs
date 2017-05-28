@@ -29,7 +29,7 @@ namespace FitOutApplication
                     },
                     new NavigationPage(new AboutPage())
                     {
-                        Title = "Excercises",
+                        Title = "Exercises",
                         Icon = Device.OnPlatform("tab_about.png",null,null)
                     },
                     new NavigationPage(new ProgressPage())
