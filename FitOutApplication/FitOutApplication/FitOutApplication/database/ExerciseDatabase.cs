@@ -1,5 +1,4 @@
-﻿using FitOutApplication.database;
-using SQLite;
+﻿using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,33 +8,33 @@ using Xamarin.Forms;
 
 namespace SQLiteExample
 {
-    public class ExerciseDatabase
+    public class TodoItemDatabase
     {
         private SQLiteAsyncConnection database;
 
-        public ExerciseDatabase(string dbPath)
+        public TodoItemDatabase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
-            database.CreateTableAsync<Exercise>().Wait();
+            database.CreateTableAsync<TodoItem>().Wait();
         }
 
 
-        public Task<List<Exercise>> GetItemsAsync()
+        public Task<List<TodoItem>> GetItemsAsync()
         {
-            return database.Table<Exercise>().ToListAsync();
+            return database.Table<TodoItem>().ToListAsync();
         }
 
-        public Task<List<Exercise>> GetItemsNotDoneAsync()
+        public Task<List<TodoItem>> GetItemsNotDoneAsync()
         {
-            return database.QueryAsync<Exercise>("SELECT * FROM [Exercise] WHERE [Done] = 0");
+            return database.QueryAsync<TodoItem>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
         }
 
-        public Task<Exercise> GetItemAsync(int id)
+        public Task<TodoItem> GetItemAsync(int id)
         {
-            return database.Table<Exercise>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return database.Table<TodoItem>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveItemAsync(Exercise item)
+        public Task<int> SaveItemAsync(TodoItem item)
         {
             if (item.ID != 0)
             {
@@ -47,7 +46,7 @@ namespace SQLiteExample
             }
         }
 
-        public Task<int> DeleteItemAsync(Exercise item)
+        public Task<int> DeleteItemAsync(TodoItem item)
         {
             return database.DeleteAsync(item);
         }
