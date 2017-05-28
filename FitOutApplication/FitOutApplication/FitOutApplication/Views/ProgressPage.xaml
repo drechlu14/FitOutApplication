@@ -5,10 +5,36 @@
               Title="FitOut"
              x:Name="ProgressPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Progress" Grid.Column="0" FontSize="Medium" />
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Progress" Grid.Column="0" FontSize="Large"  />
+                <StackLayout BackgroundColor="#d7e3f7">
+                    <Label Text="Weight" Grid.Column="0" FontSize="Medium"  />
+                    <Label x:Name="AtBeginWeight" Margin="0,15,0,0" Text="Weight at start: "  ></Label>
+                    <Label x:Name="ActualWeight"  Margin="0,0,0,0"  Text="Current weight: "  ></Label>
+                    <Label x:Name="Progress"  Margin="0,0,0,0"  Text="Progress: "  ></Label>
+                    <Entry x:Name="EntryWeight" IsVisible="False" Placeholder="Add current weight" PlaceholderColor="Navy"/>
 
+                    <Button Clicked="AddWeight_Clicked" x:Name="AddWeight" Text="Add data"></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="#d7e3f7">
+                    <Label Text="Body fat" Grid.Column="0" FontSize="Medium"  />
+                    <Label x:Name="AtBeginFat" Margin="0,15,0,0" Text="Body fat at start: "  ></Label>
+                    <Label x:Name="ActualFat"  Margin="0,0,0,0"  Text="Current body fat: "  ></Label>
+                    <Label x:Name="ProgressFat"  Margin="0,0,0,0"  Text="Progress: "  ></Label>
+                    <Entry x:Name="EntryFat" IsVisible="False" Placeholder="Add current body fat" PlaceholderColor="Navy"/>
 
-        </StackLayout>
+                    <Button Clicked="AddFat_Clicked" x:Name="AddFat" Text="Add data"></Button>
+                    </StackLayout>
+                <StackLayout BackgroundColor="#d7e3f7">
+                    <Label Text="Belly circumference" Grid.Column="0" FontSize="Medium"  />
+                    <Label x:Name="AtBeginCM" Margin="0,15,0,0" Text="Belly at start: "  ></Label>
+                    <Label x:Name="ActualCM"  Margin="0,0,0,0"  Text="Current Belly: "  ></Label>
+                    <Label x:Name="ProgressCM"  Margin="0,0,0,0"  Text="Progress: "  ></Label>
+                    <Entry x:Name="EntryCM" IsVisible="False" Placeholder="Add current belly" PlaceholderColor="Navy"/>
+                    <Button Clicked="AddCM_Clicked" x:Name="AddCM" Text="Add data"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

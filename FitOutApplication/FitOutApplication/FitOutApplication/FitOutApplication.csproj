@@ -38,6 +38,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Belly.cs" />
+    <Compile Include="Classes\BellyDatabase.cs" />
+    <Compile Include="Classes\Excercise.cs" />
+    <Compile Include="Classes\ExcerciseDatabase.cs" />
+    <Compile Include="Classes\Fat.cs" />
+    <Compile Include="Classes\FatDatabase.cs" />
+    <Compile Include="Classes\Weight.cs" />
+    <Compile Include="Classes\WeightDatabase.cs" />
     <Compile Include="Helpers\MessengingCenterAlert.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\ObservableRangeCollection.cs" />

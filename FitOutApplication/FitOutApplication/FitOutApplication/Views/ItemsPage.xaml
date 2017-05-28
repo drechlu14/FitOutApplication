@@ -38,7 +38,7 @@
                 HeightRequest="50"
                 Margin="15,0,0,0"
             />
-            <Button x:Name="Button2" Grid.Row="1" Grid.Column="1" Text="2" WidthRequest="50" HeightRequest="50" />
+            <Button x:Name="Button2"    Clicked="Button1_Click" Grid.Row="1" Grid.Column="1" Text="2" WidthRequest="50" HeightRequest="50" />
             <Button x:Name="Button3" Grid.Row="1" Grid.Column="2" Text="3" WidthRequest="50" HeightRequest="50" />
             <Button x:Name="Button4" Grid.Row="1" Grid.Column="3" Text="4" WidthRequest="50" HeightRequest="50" />
             <Button x:Name="Button5" Grid.Row="1" Grid.Column="4" Text="5" WidthRequest="50" HeightRequest="50" />
