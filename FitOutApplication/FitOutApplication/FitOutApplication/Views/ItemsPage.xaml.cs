@@ -24,7 +24,8 @@ namespace FitOutApplication.Views
             var button = (Button)sender;
             var classId = button.ClassId;
             button.BackgroundColor = Color.Yellow;
-                    //Button3.BackgroundColor = Color.Yellow;
+            Navigation.PushModalAsync(new SetupPage());
+            //Button3.BackgroundColor = Color.Yellow;
         }
 
         private void ButtonInfo_Click(object sender, EventArgs e)

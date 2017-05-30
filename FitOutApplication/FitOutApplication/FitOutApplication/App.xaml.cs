@@ -20,12 +20,13 @@ namespace FitOutApplication
         {
             Current.MainPage = new TabbedPage
             {
+                BarBackgroundColor = Color.FromHex("#00BCD4"),
                 Children =
                 {
                     new NavigationPage(new ItemsPage())
                     {
                         Title = "Calendar",
-                        Icon = Device.OnPlatform("tab_feed.png",null,null)
+                        Icon = Device.OnPlatform("tab_feed.png",null,null),                       
                     },
                     new NavigationPage(new AboutPage())
                     {
@@ -38,10 +39,9 @@ namespace FitOutApplication
                         Icon = Device.OnPlatform("tab_about.png",null,null)
                     },
                 }
-            };
-        
-        
-    }
+            };    
+        }
+
         private static ExcerciseDatabase _Excercise;
 
         public static ExcerciseDatabase DatabaseExcercise

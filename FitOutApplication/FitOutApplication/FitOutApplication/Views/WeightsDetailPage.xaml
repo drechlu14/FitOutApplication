@@ -4,7 +4,15 @@
              x:Class="FitOutApplication.Views.WeightsDetailPage"
              Title="{Binding Title}">
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="{Binding Item.Text}" FontSize="Medium"/>
-        <Label Text="{Binding Item.Description}" FontSize="Small"/>
+        <Label Text="Reps" FontSize="Medium"/>
+        <Label x:Name="ActualReps" Text="3x 10" FontSize="Small"/>
+        <Entry x:Name="EntryReps" IsVisible="False" Placeholder="Add current number of reps" PlaceholderColor="Navy"/>
+        <Button Clicked="ButtonReps_Clicked" x:Name="Reps" Text="Reps"></Button>
+        
+        <Label Text="Weight" FontSize="Medium"/>
+        <Label x:Name="ActualWeight" Text="30/35/40kg" FontSize="Small" />
+        <Entry x:Name="EntryWeight" IsVisible="False" Placeholder="Add current weight" PlaceholderColor="Navy"/>
+        <Button Clicked="ButtonWeight_Clicked" x:Name="Weight" Text="Weight"></Button>
+        
     </StackLayout>
 </ContentPage>
