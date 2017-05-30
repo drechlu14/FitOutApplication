@@ -46,6 +46,8 @@
     <Compile Include="Classes\FatDatabase.cs" />
     <Compile Include="Classes\Weight.cs" />
     <Compile Include="Classes\WeightDatabase.cs" />
+    <Compile Include="Classes\WeightDetail.cs" />
+    <Compile Include="Classes\WeightDetailDatabase.cs" />
     <Compile Include="Helpers\MessengingCenterAlert.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\ObservableRangeCollection.cs" />
